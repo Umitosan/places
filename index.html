@@ -8,31 +8,36 @@
     <title>Places to go</title>
   </head>
   <body>
+
+    <div class="jumbotron">
+      <h1>Places you'll go</h1>
+    </div>
+
     <div class="container">
-      <h1>Places to go</h1>
-
-
       <div class="row">
         <div class="col-md-6">
-
-          <form id="new-contact">
+          <form id="addPlace">
             <div class="form-group">
-              <label for="">stuff</label>
-              <input type="text" class="form-control">
+              <label for="location">Location Name</label>
+              <input id="input1" type="text" class="form-control">
             </div>
             <div class="form-group">
-              <label for="">stuff</label>
-              <input type="text" class="form-control">
+              <label for="description">Description</label>
+              <input id="input2" type="text" class="form-control">
             </div>
-
             <button type="submit" class="btn">Add</button>
           </form>
 
-
-
-
-
+          <div id="outputArea">
+            <ul id="list1"></ul>
+          </div>
         </div>
 
+        <div id="location-inspect" class="col-md-6">
+          <h2 id="location-title"></h2>
+          <p id="location-desc"></p>
+        </div>
+      </div>
+    </div>
   </body>
-  </html>
+</html>
